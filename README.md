@@ -1,108 +1,108 @@
-# icons
+# Raccolta icone e header
 
-Raccolta di icone grafiche in formato PNG: loghi di social network e servizi di messaggistica in stile uniforme (cerchio blu con simbolo interno), icone di utilità generiche e immagini di profilo.
+Raccolta di icone PNG per social network, servizi, elementi generici e header destinati ai profili social.
 
-Repository: https://github.com/michelevecchiato/icons
+## Standard grafici
 
-## Indice
+### Icone social e generiche
 
-- [Caratteristiche](#caratteristiche)
-- [Requisiti](#requisiti)
-- [Installazione](#installazione)
-- [Configurazione](#configurazione)
-- [Opzioni CLI](#opzioni-cli)
-- [Esempi d'uso](#esempi-duso)
-- [Come funziona](#come-funziona)
-- [Output e reportistica](#output-e-reportistica)
-- [Struttura del repository](#struttura-del-repository)
-- [Risoluzione problemi](#risoluzione-problemi)
-- [Autore e contatti](#autore-e-contatti)
-- [Licenza](#licenza)
+- **Dimensione:** 551 × 551 px.
+- **Formato:** PNG.
+- **Colore del branding:** blu `#0033A1` (RGB 0, 51, 161).
+- **Peso massimo:** 25 KB per file.
+- **Sfondo:** area esterna trasparente; disco interno bianco; simbolo e contorno blu, secondo il disegno dell'icona.
+- **Resa:** antialiasing e margini ottici uniformi. Non deformare né ridisegnare arbitrariamente i marchi dei servizi.
 
-## Caratteristiche
+Le icone sono progettate per mantenere contrasto su sfondi bianchi, neri, grigi e colorati: la trasparenza riguarda l'esterno del disco, mentre le aree bianche interne previste dal disegno restano bianche.
 
-- 17 file immagine in formato PNG, tutti nella radice del repository.
-- 9 loghi di social network e app di messaggistica: Facebook, Instagram, LinkedIn, Mastodon, Signal, Telegram, WhatsApp, X e YouTube.
-- 4 icone generiche in stile coerente con i loghi (cerchio blu con simbolo interno): distintivo/rosetta, calendario, chiave e simbolo "@" per il Fediverso.
-- 3 immagini di profilo (`micheleicon.png`, `micheleicon1.png`, `micheleicon2.png`) e 1 icona aziendale (`timicon.png`).
-- Le icone in stile uniforme (cerchio blu con simbolo interno) hanno dimensione 551 x 551 pixel, con le eccezioni elencate nella tabella dei file.
-- Distribuzione sotto licenza MIT.
+### Avatar personali e loghi aziendali
 
-### Elenco dei file
+I seguenti file sono esclusi dal refactoring e sono stati mantenuti invariati, senza ricampionamento, ritocco, ricompressione o modifica cromatica:
 
-| File | Contenuto | Dimensioni (px) |
-|------|-----------|-----------------|
-| `logobadge.png` | Distintivo / rosetta | 551 x 551 |
-| `logocalendar.png` | Calendario | 551 x 551 |
-| `logof.png` | Facebook | 551 x 551 |
-| `logofediverse.png` | Simbolo "@" (Fediverso) | 551 x 551 |
-| `logoin.png` | LinkedIn | 551 x 551 |
-| `logoins.png` | Instagram | 551 x 551 |
-| `logokey.png` | Chiave | 551 x 551 |
-| `logomastodon.png` | Mastodon | 200 x 200 |
-| `logosignal.png` | Signal | 551 x 551 |
-| `logotelegram.png` | Telegram | 200 x 200 |
-| `logowa.png` | WhatsApp | 551 x 551 |
-| `logox.png` | X | 551 x 551 |
-| `logoy.png` | YouTube | 551 x 551 |
-| `micheleicon.png` | Immagine di profilo (fotografia) | 480 x 401 |
-| `micheleicon1.png` | Immagine di profilo (illustrazione) | 480 x 401 |
-| `micheleicon2.png` | Immagine di profilo (illustrazione, variante) | 480 x 401 |
-| `timicon.png` | Icona TIM | 887 x 741 |
+- `micheleicon.png` — 480 × 401 px
+- `micheleicon1.png` — 480 × 401 px
+- `micheleicon2.png` — 480 × 401 px
+- `timicon.png` — 887 × 741 px
+- `timicon_noovle.png` — 887 × 741 px
 
-## Requisiti
+Non applicare a questi file lo standard cromatico `#0033A1`: i colori e l'aspetto originali devono essere preservati.
 
-- Nessun linguaggio di programmazione, runtime o dipendenza software.
-- Git, solo se si desidera clonare il repository.
-- Un qualsiasi visualizzatore o editor di immagini compatibile con il formato PNG.
+## Elenco delle icone
 
-## Installazione
+| File | Contenuto | Dimensioni | Peso massimo |
+|---|---|---:|---:|
+| `logobadge.png` | Distintivo / rosetta | 551 × 551 | 25 KB |
+| `logocalendar.png` | Calendario | 551 × 551 | 25 KB |
+| `logof.png` | Facebook | 551 × 551 | 25 KB |
+| `logofediverse.png` | Simbolo Fediverso (@) | 551 × 551 | 25 KB |
+| `logoin.png` | LinkedIn | 551 × 551 | 25 KB |
+| `logoins.png` | Instagram | 551 × 551 | 25 KB |
+| `logokey.png` | Chiave | 551 × 551 | 25 KB |
+| `logomastodon.png` | Mastodon | 551 × 551 | 25 KB |
+| `logosignal.png` | Signal | 551 × 551 | 25 KB |
+| `logotelegram.png` | Telegram | 551 × 551 | 25 KB |
+| `logowa.png` | WhatsApp | 551 × 551 | 25 KB |
+| `logox.png` | X | 551 × 551 | 25 KB |
+| `logoy.png` | YouTube | 551 × 551 | 25 KB |
 
-Il progetto non richiede installazione: le icone sono file statici. Per ottenerle in locale è sufficiente clonare il repository:
+## Header
 
+Gli header sono conservati nella cartella `headers/`. Tutti sono in PNG. La conversione da JPG a PNG è lossless rispetto ai pixel decodificati dal JPEG; non è stato eseguito alcun ridimensionamento o intervento finalizzato a ridurre il peso dei file header.
+
+| File | Piattaforma / progetto | Dimensioni |
+|---|---|---:|
+| `header-personal-linkedin-1584x396.png` | Personale / LinkedIn | 1584 × 396 |
+| `header-personal-linkedin-1178x294.png` | Personale, 30 anni / LinkedIn | 1178 × 294 |
+| `header-rock-facebook-1640x624.png` | Rock / Facebook | 1640 × 624 |
+| `header-rock-x-1500x500.png` | Rock / X | 1500 × 500 |
+| `header-rrmap-facebook-1640x624.png` | RRmap / Facebook | 1640 × 624 |
+| `header-rrmap-linkedin-1584x396.png` | RRmap / LinkedIn | 1584 × 396 |
+| `header-rrmap-x-1500x500.png` | RRmap / X | 1500 × 500 |
+| `header-timenterprise-linkedin-780x140.png` | TIM Enterprise / LinkedIn | 780 × 140 |
+
+### Naming convention
+
+Usare nomi in minuscolo, separati da trattini, secondo lo schema:
+
+`header-progetto-piattaforma-larghezza x altezza.png`
+
+Esempio: `header-rock-facebook-1640x624.png`.
+
+Le dimensioni nel nome descrivono i pixel effettivi del file. Mantenere il rapporto d'aspetto originale e verificare le specifiche aggiornate della piattaforma prima di pubblicare un header.
+
+## Footer
+
+Nell'archivio corrente non sono presenti immagini footer. Se ne verranno aggiunte in futuro, usare lo schema `footer-progetto-destinazione-larghezzaxaltezza.png`.
+
+## Utilizzo
+
+Markdown:
+
+```markdown
+![X](logox.png)
 ```
-git clone https://github.com/michelevecchiato/icons.git
+
+HTML:
+
+```html
+<img src="logox.png" alt="X" width="48" height="48">
 ```
 
-In alternativa, è possibile scaricare i singoli file PNG direttamente dalla pagina GitHub del repository.
+Per mantenere la nitidezza, usare le icone alla dimensione nativa o ridurle; evitare ingrandimenti significativi. Non aggiungere sfondi opachi all'immagine se si desidera mantenere la trasparenza esterna.
 
-## Configurazione
+## Struttura
 
-Il progetto non prevede file di configurazione, variabili d'ambiente o parametri.
-
-## Opzioni CLI
-
-Il progetto non fornisce alcuno script né interfaccia a riga di comando, quindi non esistono opzioni CLI.
-
-## Esempi d'uso
-
-Inserimento di un'icona in un documento Markdown (percorso relativo al repository):
-
-`![X](logox.png)`
-
-Inserimento in una pagina HTML con dimensione personalizzata:
-
-`<img src="logox.png" alt="X" width="48" height="48">`
-
-Riferimento a un'icona tramite URL diretto al file nel ramo `main`:
-
-`https://raw.githubusercontent.com/michelevecchiato/icons/main/logox.png`
-
-## Come funziona
-
-Il repository contiene esclusivamente file immagine, senza codice sorgente. Ogni file PNG si utilizza così com'è, copiandolo o referenziandolo dove serve (documenti, pagine web, profili, firme email, presentazioni).
-
-Le icone dei loghi e le icone generiche condividono lo stesso stile: cerchio blu con simbolo interno su sfondo chiaro, per ottenere un aspetto coerente quando vengono accostate.
-
-## Output e reportistica
-
-Il progetto non genera alcun output né report: l'unico contenuto sono i file PNG elencati nella sezione "Caratteristiche".
-
-## Struttura del repository
-
-```
+```text
 icons/
-├── LICENSE
+├── headers/
+│   ├── header-personal-linkedin-1584x396.png
+│   ├── header-personal-linkedin-1178x294.png
+│   ├── header-rock-facebook-1640x624.png
+│   ├── header-rock-x-1500x500.png
+│   ├── header-rrmap-facebook-1640x624.png
+│   ├── header-rrmap-linkedin-1584x396.png
+│   ├── header-rrmap-x-1500x500.png
+│   └── header-timenterprise-linkedin-780x140.png
 ├── logobadge.png
 ├── logocalendar.png
 ├── logof.png
@@ -119,24 +119,12 @@ icons/
 ├── micheleicon.png
 ├── micheleicon1.png
 ├── micheleicon2.png
-└── timicon.png
+├── timicon.png
+├── timicon_noovle.png
+├── LICENSE
+└── README.md
 ```
-
-## Risoluzione problemi
-
-| Problema | Possibile causa | Soluzione |
-|----------|-----------------|-----------|
-| L'immagine non viene mostrata in Markdown | Percorso o nome file errato | Verificare che il nome corrisponda esattamente a quello del file (es. `logox.png`), rispettando le minuscole |
-| Il file scaricato dalla pagina GitHub non si apre | È stata salvata la pagina HTML invece dell'immagine | Usare il pulsante di download del file oppure l'URL `raw.githubusercontent.com` |
-| `logomastodon.png` e `logotelegram.png` risultano meno nitide delle altre | Hanno dimensione 200 x 200 pixel, inferiore ai 551 x 551 delle altre icone | Usarle a dimensioni contenute |
-| Le icone appaiono sfocate dopo un ingrandimento | Sono immagini raster (PNG), non vettoriali | Usarle alle dimensioni originali o inferiori |
-
-## Autore e contatti
-
-- Autore: Michele Vecchiato
-- GitHub: https://github.com/michelevecchiato
-- Email: michele.vecchiato@gmail.com
 
 ## Licenza
 
-Distribuito sotto licenza MIT. Copyright (c) 2026 Michele Vecchiato. Il testo completo è nel file `LICENSE`.
+La licenza del repository è descritta nel file `LICENSE`. I marchi dei servizi di terze parti restano di proprietà dei rispettivi titolari.
