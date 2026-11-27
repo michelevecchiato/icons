@@ -53,6 +53,7 @@ Gli header sono conservati nella cartella `headers/`. Tutti sono in PNG. La conv
 |---|---|---:|
 | `header-personal-linkedin-1584x396.png` | Personale / LinkedIn | 1584 × 396 |
 | `header-personal-linkedin-1178x294.png` | Personale, 30 anni / LinkedIn | 1178 × 294 |
+| `header-TIM-DC-linkedin-1584x396.png` | Aziendale TIM DC / LinkedIn | 1584 × 396 |
 | `header-rock-facebook-1640x624.png` | Rock / Facebook | 1640 × 624 |
 | `header-rock-x-1500x500.png` | Rock / X | 1500 × 500 |
 | `header-rrmap-facebook-1640x624.png` | RRmap / Facebook | 1640 × 624 |
@@ -97,6 +98,7 @@ icons/
 ├── headers/
 │   ├── header-personal-linkedin-1584x396.png
 │   ├── header-personal-linkedin-1178x294.png
+|   ├── header-TIM-DC-linkedin-1584x396.png
 │   ├── header-rock-facebook-1640x624.png
 │   ├── header-rock-x-1500x500.png
 │   ├── header-rrmap-facebook-1640x624.png
